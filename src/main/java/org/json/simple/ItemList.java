@@ -40,7 +40,7 @@ public class ItemList {
 	}
 	
 	public String[] getArray(){
-		return this.items.toArray(new String[this.items.size()]);
+		return (String[])this.items.toArray();
 	}
 	
 	public void split(String s,String sp,List append,boolean isMultiToken){
